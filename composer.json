@@ -2,6 +2,9 @@
   "name": "hexlet/php-package",
   "bin": ["bin/php-package"],
   "type": "library",
+  "files": [
+    "src/Utils.php"
+  ],
   "authors": [
     {
       "name": "Kirill Mokevnin",
