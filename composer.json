@@ -2,9 +2,6 @@
   "name": "hexlet/php-package",
   "bin": ["bin/php-package"],
   "type": "library",
-  "files": [
-    "src/Utils.php"
-  ],
   "authors": [
     {
       "name": "Kirill Mokevnin",
@@ -17,9 +14,13 @@
     "test": "phpunit tests"
   },
   "autoload": {
+    "files": [
+      "src/Utils.php"
+    ],
     "psr-4": {
-      "Php\\Package\\": "src",
-      "Php\\Package\\Tests\\": "tests"
+      "Php\\Package\\": "src/",
+      "Php\\Package\\Tests\\": "tests/",
+      "files\\": "src/Utils.php"
     }
   },
   "require": {
